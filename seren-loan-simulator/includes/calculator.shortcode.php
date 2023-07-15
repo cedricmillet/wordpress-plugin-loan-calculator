@@ -15,6 +15,7 @@ function seren_loan_calculator_callback( $atts ) {
     $taux = esc_html(get_option('taux_par_default'));
     $duree = esc_html(get_option('duree_par_default'));
 
+    ob_start();
     ?>
         <section id="seren-loan-calculator">
             <h2 class="title">Combien me coûtera <b>ce bien chaque mois ?</b></h2>
@@ -127,6 +128,9 @@ function seren_loan_calculator_callback( $atts ) {
 
         </script>
     <?php
+    $out = ob_get_contents();
+    ob_end_clean();
+    return $out;
 }
 
 
