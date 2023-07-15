@@ -1,0 +1,54 @@
+/* This CSS file is shared globally across the site. */
+
+#seren-loan-calculator {
+    /* root element */
+}
+
+#seren-loan-calculator .title:after {
+    content: '';
+    display: block;
+    margin-top: 12px;
+    height: 4px;
+    background-color: rgb(224, 0, 52);
+    border-radius: 4px;
+    width: 2em;
+}
+
+#seren-loan-calculator table tr,
+#seren-loan-calculator table tr th {
+    border: none;
+    background-color: transparent;
+    padding: .5em;
+}
+
+#seren-loan-calculator table tr th:first-child {
+    padding-left: 0;
+}
+#seren-loan-calculator table tr th:last-child {
+    padding-right: 0;
+}
+#seren-loan-calculator table {
+    text-align: left;
+}
+
+#seren-loan-calculator table label {
+    margin-bottom: .1em;
+}
+
+#seren-loan-calculator input.field {
+    border: 1px solid rgb(146, 146, 146);
+    color: #000;
+}
+
+#seren-loan-calculator .result {
+    padding: 1em;
+    border-radius: .4em;
+    border: 1px solid black;
+}
+#seren-loan-calculator .result .monthly {
+    font-size: 2rem;
+}
+
+#seren-loan-calculator .result .monthly:after {
+    content: ' €';
+}
